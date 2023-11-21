@@ -41,4 +41,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
-@.vsidx
+#Angular Compilation Files
+*.vsidx
+*.suo
