@@ -1,0 +1,42 @@
+<div class="ekart--product--container">
+  <!--<img [src]="product.pImage">--> <!--using the Property Binding Syntax / method-->
+  <!--<p>Name: {{product.name}}</p>--> <!--using the {{}} allows for any type script code to be used. (this uses Data Binding Syntax / method)-->
+  <!--<p>Price: {{"$" + product.price}}</p>
+  <p>Color: {{product.color}}</p>
+  <p>Discounted Price: {{"$" + getDiscountedPrice().toFixed(2)}}</p>
+  <p>{{getStockStatus()}}</p>-->
+  <!--<button [disabled]="!(product.currentStock > 0)">Buy Now!</button>-->  <!--using the Property Binding Syntax / method-->
+  <!--<button (click)="decrementCart()">-</button>
+  <span>{{ addToCart }}</span>
+  <button (click)="incrementCart()">+</button>--> <!--Event Binding on HTML-->
+  <!--<p>name: {{name}}</p>-->
+  <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+  <!--<div *ngFor="let item of listOfString">
+    <p>Current element of array is: {{item}}</p>
+  </div>-->
+  <product-list [searchText]="searchText" #productListComponent></product-list>
+  <product-detail *ngIf="productListComponent.selectedProduct" [productListComp]="productListComponent"></product-detail>
+
+  <div class="ekart-featured-products">
+    <div class="ekart-featured-product-heading">
+      <h1>Latest Arrival in Popular Brands</h1>
+    </div>
+
+    <!--Demonstrating ng-content using container to featured-brands-->
+    <featured-brands>
+      <h3 class="title">New Arrival in Nike</h3> <!--Gets Rendered in the featured-brands component where ng-content is being used-->
+      <button class="call-to-action">Show New Arrivals in Nike</button>
+    </featured-brands>
+
+    <featured-brands>
+      <h3 class="title">New Arrival in Adidas</h3>
+      <button class="call-to-action">Show New Arrivals in Adidas</button>
+    </featured-brands>
+
+    <featured-brands>
+      <h3 class="title">New Arrival in Reebok</h3>
+      <button class="call-to-action">Show New Arrivals in Reebok</button>
+    </featured-brands>
+
+  </div>
+</div>
