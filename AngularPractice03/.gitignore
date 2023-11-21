@@ -44,3 +44,4 @@ Thumbs.db
 #Angular Compilation Files
 *.vsidx
 *.suo
+.suo
