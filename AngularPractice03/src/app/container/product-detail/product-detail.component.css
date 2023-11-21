@@ -45,12 +45,12 @@
 }
 
 .ekart-product-detail-gbc > span {
-  background-color: #36454F;
-  margin-left: 0px;
+/*  background-color: #36454F;
+*/  margin-left: 0px;
   padding: 5px 20px;
   font-size: 14px;
-  color: white;
-}
+/*  color: white;
+*/}
 
 .ekart-product-detail-name {
   margin: 20px auto;

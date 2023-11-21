@@ -1,1 +1,2 @@
 C:\Users\User\Desktop\Gov Work\School Curriculum and Standards Authority\Preparations\Visual Studio Projects\AngularPractice03\obj\Debug\AngularPractice03.esproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Gov Work\School Curriculum and Standards Authority\Preparations\Visual Studio Projects\Angular-Practice-eKart\AngularPractice03\obj\Debug\AngularPractice03.esproj.CoreCompileInputs.cache
